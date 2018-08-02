@@ -1,0 +1,34 @@
+#ifndef _COMMANDS_H
+#define _COMMANDS_H
+
+//commands handled here
+extern int char_encrypt(unsigned char my_char);
+extern int return_caps(unsigned char small);
+extern unsigned char return_char(int position);
+extern int return_low(unsigned char upper);
+extern char *encod(unsigned char chal);
+extern unsigned char decod(char *str);
+                                   //these are all prototypes
+extern char *decrypt(char *str);
+extern char *encrypt(const char *str);
+extern char *doubleword(char *str);
+extern char *reverse(char *str);
+extern char *delet(char *,char *str);
+extern char *replace(char *input,char *condition);
+
+extern char *double_(char *str,int *);
+extern char *reverse_(char *str,int *);
+extern char *replace_(char *str,int *);
+extern char *delete_(char *str,int *);
+extern char *encrypt_(char *str,int *);
+extern char *decrypt_(char *str,int *);
+extern void reply_(char *str,SOCKET );
+extern void group_(char *str,SOCKET );
+
+extern unsigned long __stdcall orderProc(PVOID);
+extern unsigned long __stdcall execProc(PVOID);
+extern void getBody(int,char *str,DST *st);
+extern int Init(MYSQL *c);
+extern MYSQL *getOpenDb(void);
+#define UNREFERENCED(a) a
+#endif

@@ -1,0 +1,75 @@
+<DOCTYPE html>
+<html>
+<head><title>JSS admin interface</title>
+<style>
+header{
+	background-color:steelblue;
+	color:white;
+	text-align:center;
+	padding:10px;
+	font-size:30px
+	}
+nav{
+	line-height:30px;
+	background-color:#48D1CC;
+	color:white;
+	height:500px;
+	width:250px;
+	float:left;
+	padding:15px;
+	font-size:20px;
+}
+section{
+	width:1020px;
+	text-align:center;
+	padding:10px;
+	font-size:20px;
+	background-color:light;
+}
+footer{
+	background-color:steelblue;
+	color:white;
+	clear:both;
+	text-align:center;
+	padding:10px;
+}
+</style>
+</head>
+<body style = "background-color: light-green;">
+
+    <header>	WELCOME TO JSS.	</header>
+<nav>
+<form name="jobs" action="jobs.php" method="POST">
+<ul type = "none">
+
+	<li><input type="submit" name="choice" value="HOME" style="background-color:steelblue;color:white;border-radius:20px;size:20px" /></li>
+	<li><input type="submit" name="choice" value="Average Processing Time" style="background-color:steelblue;color:white;border-radius:20px;size:20px"/></li>
+	<li><input type="submit" name="choice" value="Waiting Jobs"  style="background-color:steelblue;color:white;border-radius:20px;size:20px"/></li>
+	<li><input type="submit" name="choice" value="Successful Jobs" style="background-color:steelblue;color:white;border-radius:20px;size:20px" /></li>
+	<li><input type="submit" name="choice" value="Average Waiting Time" style="background-color:steelblue;color:white;border-radius:20px;size:20px" /></li>
+</ul>
+</form>
+</nav>
+
+<section>
+<?php
+//call function that handle the different commands
+function getCommand($p){
+display();
+}
+
+?>
+	<!--<form action ="Addusers.php" method = "post">
+	<p>Enter your username and password.</p>
+	User name:<input type = "text" name = "user name"/><br/><br/>
+	Password:<input type = "text" name = "password"><br/><br/>
+	<input type = "reset" value = "clear"/>
+	<input type = "submit" value = "send"/>--->
+</section>
+
+	<footer>
+	User guide.
+	</footer>
+
+</body>
+</html>

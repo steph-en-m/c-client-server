@@ -1,0 +1,44 @@
+<DOCTYPE html>
+<html>
+<head><title>JSS admin interface</title>
+<style>
+</head>
+<body style = "background-color: light-green;">
+
+    <header>	WELCOME TO JSS.	</header>
+<nav>
+<form name="jobs" action="jobs.php" method="POST">
+<ul type = "none">
+
+	<li><input type="submit" name="choice" value="HOME" style="background-color:steelblue;color:white;border-radius:20px;size:20px" /></li>
+	<li><input type="submit" name="choice" value="Average Processing Time" style="background-color:steelblue;color:white;border-radius:20px;size:20px"/></li>
+	<li><input type="submit" name="choice" value="Waiting Jobs"  style="background-color:steelblue;color:white;border-radius:20px;size:20px"/></li>
+	<li><input type="submit" name="choice" value="Successful Jobs" style="background-color:steelblue;color:white;border-radius:20px;size:20px" /></li>
+	<li><input type="submit" name="choice" value="Average Waiting Time" style="background-color:steelblue;color:white;border-radius:20px;size:20px" /></li>
+</ul>
+</form>
+</nav>
+
+<section>
+<?php
+//call function that handle the different commands
+function getCommand($p){
+//display();
+
+}
+
+?>
+	<!--<form action ="Addusers.php" method = "post">
+	<p>Enter your username and password.</p>
+	User name:<input type = "text" name = "user name"/><br/><br/>
+	Password:<input type = "text" name = "password"><br/><br/>
+	<input type = "reset" value = "clear"/>
+	<input type = "submit" value = "send"/>--->
+</section>
+
+	<footer>
+	User guide.
+	</footer>
+
+</body>
+</html>
