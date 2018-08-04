@@ -1,1 +1,1 @@
-# resv
+# client-server program in C
